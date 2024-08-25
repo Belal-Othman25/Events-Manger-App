@@ -1,0 +1,102 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    background-color: #fff;
+    margin: 0 0 20px;
+    padding: 20px;
+    text-align: center;
+}
+.container{
+    margin: 20px auto;
+    max-width: 900px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container .add-box{
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+.container .add-box input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+
+}
+.container .add-box button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: #f44f33;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .add-box button:hover,
+.events .event button:hover {
+    background-color: #c83d2a; 
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 10px;
+    padding-top: 20px;
+}
+.events .event{
+    background-color: #ffffff;
+    padding: 20px;
+}
+.events .event {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; 
+}
+.events .event:hover {
+    transform: translateY(-5px); 
+}
+.events .event button:active {
+    background-color: #004080; 
+}
+
+
+.events .event h3{
+    margin: 0 0 20px;
+}
+.events .event p{
+    display: flex;
+    justify-content: space-between;
+}
+.events .event p:not(:last-of-type){
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.events .event button{
+width: 100%;
+padding: 10px;
+border: none;
+cursor: pointer;
+background-color: rgb(0, 69, 120);
+color: white;
+font-weight: bold;
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .events .event {
+        padding: 15px;
+    }
+}
